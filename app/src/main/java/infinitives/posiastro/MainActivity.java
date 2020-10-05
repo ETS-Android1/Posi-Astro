@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     ArrayList<astro> astros;
+    
+    // API LINK EXPOSED
     public static String URL = "https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1RS75MD36VEQUjxdlNAw8bxcp_umIh09neUm69y2hJNM&sheet=Sheet1";
     RecyclerView recycler;
     CAdapter cAdapter;
@@ -60,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-1361359682897035/1838286669");
+        // Ad Unit Removed 
+        interstitialAd.setAdUnitId("");
         linearLayout = findViewById(R.id.linear);
         recycler = findViewById(R.id.recycle);
         textView = findViewById(R.id.text);
