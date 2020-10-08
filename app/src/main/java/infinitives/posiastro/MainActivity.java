@@ -119,6 +119,12 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
+                    /*
+                    Use Gson implementaion;
+                    Gson gson = new Gson();
+                    List<Sheet1> s1 = gson.fromJson(response,Sheet1.java);
+                    can pass list to recycler adapter.
+                    */
 
                 } catch (JSONException e) {
                     e.printStackTrace();
