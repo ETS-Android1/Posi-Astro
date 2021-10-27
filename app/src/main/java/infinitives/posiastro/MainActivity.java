@@ -36,7 +36,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
 
-    ArrayList<astro> astros;
+   private ArrayList<astro> astros;
     
     // API LINK EXPOSED
     public static String URL = "https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1RS75MD36VEQUjxdlNAw8bxcp_umIh09neUm69y2hJNM&sheet=Sheet1";
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+   // We can use Gson here.
     private void Json() {
         StringRequest stringRequest = new StringRequest(URL, new Response.Listener<String>() {
             @Override
